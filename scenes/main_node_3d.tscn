@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://dodktt7nklxww"]
+
+[ext_resource type="Script" uid="uid://bmhx7oel8if1u" path="res://scripts/ray_emitter.gd" id="1_37ocb"]
+
+[node name="Main-Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 6)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 6)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+
+[node name="RayEmitter" type="Node3D" parent="."]
+script = ExtResource("1_37ocb")
